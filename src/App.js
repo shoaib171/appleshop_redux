@@ -10,6 +10,7 @@ import ProductsDetail from "./Components/ProductsDetail";
 import { Routes, Route } from "react-router-dom";
 import Cart from "./Components/Cart";
 import { useAuth0 } from "@auth0/auth0-react";
+import CheckOut from "./Components/CheckOut";
 
 function App() {
   const { isAuthenticated } = useAuth0();
@@ -36,6 +37,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductsDetail />} />
+        <Route path="/checkout" element={<CheckOut />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route

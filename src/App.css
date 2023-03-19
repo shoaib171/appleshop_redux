@@ -7,11 +7,10 @@
 }
 .navbar-brand {
   letter-spacing: 4px;
-  font-family: "Sacramento", cursive;
+  font-family: "Alfa Slab One", cursive;
 
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .navbar-nav li a {
   font-size: 18px;
 }
-

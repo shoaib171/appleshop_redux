@@ -4,6 +4,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { DELETE_ITEM } from "../Redux/Action/Actions";
+import { NavLink } from "react-router-dom";
 const Cart = () => {
   const dispatch = useDispatch();
   const HandleReducers = useSelector((state) => state.HandleReducers);
@@ -53,11 +54,28 @@ const Cart = () => {
       </>
     );
   };
+  const CheckOut = () => {
+    return (
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-12">
+            <NavLink
+              to="/checkout"
+              className="btn btn-outline-primary mb-5 w-25"
+            >
+              Proceed to Checkout
+            </NavLink>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div>
       {HandleReducers.length !== 0 && HandleReducers.map(CartProduct)}
       {HandleReducers.length === 0 && <CartMessage />}
+      {HandleReducers.length !== 0 && <CheckOut />}
     </div>
   );
 };
