@@ -19,7 +19,7 @@ const CheckOut = () => {
   };
   return (
     <div className="container my-5 ">
-      <div className="row g-5">
+      <div className="row ">
         <div className="col-md-12 col-lg-12 ">
           <h4 className="d-flex justify-content-between align-items-center mb-3">
             <span className="text-primary">Your cart</span>
@@ -48,7 +48,7 @@ const CheckOut = () => {
               </button>
             </div>
           </form>
-          <button className="btn btn-outline-primary w-25 my-3">
+          <button className="btn btn-outline-primary  my-3">
             Continue to checkout
           </button>
         </div>
